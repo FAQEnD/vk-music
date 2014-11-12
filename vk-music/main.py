@@ -1,14 +1,18 @@
 import vk
 from random import randint
-from Classes.UserControl import UserControl
+from Classes.UserController import userController
+from Classes.vkAppController import vkAppController
 
 
-userControl = UserControl()
-userControl.loadData()
-vkapi = vk.API('4623020', userControl.login, userControl.password)
-vkapi.scope = "friends"
-xop = vkapi.get_access_token()#need for scope
-profiles = vkapi.users.get(user_id=74487517)
+userController = userController()
+userController.loadData()
+
+vkApp = vkAppController()
+vkapi = vk.API(vkApp.appId, userController.login, userController.password)
+vkapi.scope = vkApp.scopes
+accessToken = vkapi.get_access_token()#need for scope
+
+profiles = vkapi.users.get()
 print(profiles[0]['first_name']+' '+profiles[0]['last_name'])
 #debug msg:
 debug = randint(0,100)

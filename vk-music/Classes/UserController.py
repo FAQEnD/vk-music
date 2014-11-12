@@ -1,6 +1,7 @@
 import os
 import hashlib
-class UserControl:
+
+class userController:
     """this class control users log-in activity"""
     def __init__(self):
         self.login = ""

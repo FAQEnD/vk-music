@@ -22,11 +22,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Classes\vkAppController.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Classes\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="main.py" />
-    <Compile Include="Classes\UserControl.py">
+    <Compile Include="Classes\UserController.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="__init__.py">
