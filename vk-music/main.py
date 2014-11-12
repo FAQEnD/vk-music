@@ -4,7 +4,7 @@ from Classes.UserControl import UserControl
 
 
 userControl = UserControl()
-userControl.requestData()
+userControl.loadData()
 vkapi = vk.API('4623020', userControl.login, userControl.password)
 vkapi.scope = "friends"
 xop = vkapi.get_access_token()#need for scope
