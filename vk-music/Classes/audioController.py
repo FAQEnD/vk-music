@@ -11,6 +11,3 @@ class audioController():
   def audioTaker (self):
       vkapi = vk.API(vkApp.appId, userController.login, userController.password)
       vkapi('audio.get', count = 6000)
-
-
-
