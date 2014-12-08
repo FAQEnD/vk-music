@@ -30,7 +30,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="main.py" />
-    <Compile Include="Classes\UserController.py">
+    <Compile Include="Classes\userController.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="__init__.py">
